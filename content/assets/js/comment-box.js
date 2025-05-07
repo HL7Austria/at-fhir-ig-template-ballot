@@ -4,7 +4,7 @@
     let currentSelection = null;
     const COMMENTS_JSON_URL_PREFIX = 'https://raw.githubusercontent.com/HL7Austria/ballot-comments/main/discussions-';
     const COMMENTS_JSON_URL_SUFFIX = '/comments.json';
-    const COMMENTS_JSON_URL = COMMENTS_JSON_URL_PREFIX.concat(GITHUB_REPO.replaceAll("/","-"), COMMENTS_JSON_URL_SUFFIX);
+    const COMMENTS_JSON_URL = COMMENTS_JSON_URL_PREFIX.concat(GITHUB_REPO.replace("HL7Austria/",""), COMMENTS_JSON_URL_SUFFIX);
     let loadedComments = [];
 
     const INLINE_TAGS = ['a', 'span', 'b', 'i', 'u', 'strong', 'em', 'small', 'abbr', 'sub', 'sup', 'mark', 'time'];
