@@ -1,0 +1,10 @@
+{
+  "_pre-process-documentation": "This array of objects indicates data being converted from existing files using scripts to support dependency checking when performing continuous builds",
+  "pre-process": [
+    {
+      "folder": "input/js",
+      "relativePath": "assets/js"
+    }
+  ]
+}
+
